@@ -2,9 +2,6 @@
 
 </style>
 <h2>Accordion</h2>
-<div *ngFor="let Data of Data_Accordian">
-  <div [ngClass]="Data.Accordion_Heading_View_MB" (click)="ShowHide(Data.id)">{{ Data.pannelHeading }}</div>
-  <div [ngClass]="Data.Accordion_Pannel_View_MB" > {{ Data.pannelDesc }}</div>
-</div>
+<app-accordion-v1 [item]="currentItem"></app-accordion-v1>
 
 
