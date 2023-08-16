@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TempByMB';
-  currentItem = "data";
+  currentItem = [
+    ["m1","m2"],
+    ["m3","m4"]
+  ];
 
 
 }

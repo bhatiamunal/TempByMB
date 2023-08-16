@@ -1,11 +1,11 @@
-import { Component,Input } from '@angular/core';
+import { Component,Input,OnInit  } from '@angular/core';
 
 @Component({
   selector: 'app-accordion-v1',
   templateUrl: './accordion-v1.component.html',
   styleUrls: ['./accordion-v1.component.css']
 })
-export class AccordionV1Component {
+export class AccordionV1Component  implements OnInit{
   Data_Accordian:any
   @Input() item:any ;
   constructor(){
@@ -15,10 +15,13 @@ export class AccordionV1Component {
     //   {heading:"This is heading 2 ",descbtion:"this is describtion 2"}
     // ];
     
-     this.fillData();
+    
+  }
+  ngOnInit() {
+    this.fillData();
   }
   async fillData()  {
-    debugger
+    
     let Data_Accordian_inner:any[]=[];
     this.item.forEach((element:any,index :any) => {
        Data_Accordian_inner.push(
