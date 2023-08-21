@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { AccordionV1Component } from './base/accordion-v1/accordion-v1.component';
 import { CardComponent } from './base/card/card.component';
 
+import { BaseComponent } from './table/base/base.component';
 @NgModule({
   declarations: [
     AppComponent,
     AccordionV1Component,
-    CardComponent
+    CardComponent,
+    BaseComponent
   ],
   imports: [
     BrowserModule,
