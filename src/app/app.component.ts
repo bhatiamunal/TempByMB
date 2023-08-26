@@ -11,6 +11,6 @@ export class AppComponent {
     ["m1","m2"],
     ["m3","m4"]
   ];
-
-
+  cardTypeSimple="contact_card";
+  cardTypeFlip="contact_card_flip";
 }

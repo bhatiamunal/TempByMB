@@ -1,9 +1,32 @@
-<style>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <h2>Accordion</h2>
+            <app-accordion-v1 [item]="currentItem"></app-accordion-v1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-2">
+           
+            <app-card [item]="cardTypeSimple"></app-card>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-2">
+            
+            <app-card [item]="cardTypeFlip"></app-card>
+        </div>
+    </div>
+   
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-12">
+            <h2>Table</h2>
+            <app-base></app-base>
+        </div>
+    </div>
+</div>
 
-</style>
-<h2>Accordion</h2>
-<app-accordion-v1 [item]="currentItem"></app-accordion-v1>
-<app-base></app-base>
-<app-card></app-card>
+
+
+
+
 
 
