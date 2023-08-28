@@ -13,4 +13,5 @@ export class AppComponent {
   ];
   cardTypeSimple="contact_card";
   cardTypeFlip="contact_card_flip";
+  cartTypeUserProfileCard="cartTypeUserProfileCard";
 }
