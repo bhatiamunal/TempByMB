@@ -7,16 +7,25 @@ import { AccordionV1Component } from './base/accordion-v1/accordion-v1.component
 import { CardComponent } from './base/card/card.component';
 
 import { BaseComponent } from './table/base/base.component';
+import { TabComponent } from './base/tab/tab.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     AccordionV1Component,
     CardComponent,
-    BaseComponent
+    BaseComponent,
+    TabComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
