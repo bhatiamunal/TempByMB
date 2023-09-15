@@ -12,6 +12,12 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { AppLayoutComponent } from './containers/_layout/app-layout/app-layout.component';
+import { SiteLayoutComponent } from './containers/_layout/site-layout/site-layout.component';
+import { FooterComponent } from './containers/default/footer/footer.component';
+import { HeaderComponent } from './containers/default/header/header.component';
+import { SidebarComponent } from './containers/default/sidebar/sidebar.component';
+import { NavbarComponent } from './containers/default/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +26,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     BaseComponent,
     TabComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    AppLayoutComponent,
+    SiteLayoutComponent,
+    FooterComponent,
+    HeaderComponent,
+    SidebarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
