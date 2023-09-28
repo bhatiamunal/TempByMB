@@ -19,6 +19,8 @@ import { HeaderComponent } from './containers/default/header/header.component';
 import { SidebarComponent } from './containers/default/sidebar/sidebar.component';
 import { NavbarComponent } from './containers/default/navbar/navbar.component';
 import { ObservableComponent } from './learning/observable/observable.component';
+import { FormsComponent } from './learning/forms/forms.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,8 @@ import { ObservableComponent } from './learning/observable/observable.component'
     HeaderComponent,
     SidebarComponent,
     NavbarComponent,
-    ObservableComponent
+    ObservableComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

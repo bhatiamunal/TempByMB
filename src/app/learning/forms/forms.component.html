@@ -1,0 +1,41 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>
+        Name:
+        <input formControlName="name" placeholder="Your name">
+        <p>
+            <button type="button" (click)="addSkills()">Add</button>
+          </p>
+      </label>
+    </div>
+    <div>
+      <label>
+        Email:
+        <input formControlName="email" placeholder="Your email">
+      </label>
+    </div>
+    <div>
+      <label>
+        Message:
+        <input formControlName="message" placeholder="Your message">
+      </label>
+    </div>
+   
+   
+
+        <div formArrayName="skills" *ngFor="let creds of myForm.controls.skills?.value; let i = index">
+            <div [formGroupName]="i">
+                {{i}}
+                skill name :
+                <input type="text" formControlName="skill">
+                exp:
+                <input type="text" formControlName="exp">
+         
+                <button (click)="removeSkill(i)">Remove</button>
+            </div>
+        </div>
+   
+    <button type="submit">Send</button>
+  </form>
+
+ 
