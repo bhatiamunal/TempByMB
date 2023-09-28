@@ -37,5 +37,12 @@
    
     <button type="submit">Send</button>
   </form>
-
- 
+  <form #userLogin = "ngForm" (ngSubmit) = "onSubmit1(userLogin.value)">
+    <input type = "text" name = "emailid" placeholder = "Email Id" ngModel #emailid = 'ngModel' required>
+    <span class="help-block" *ngIf="!emailid.valid && emailid.touched">Please Fill The Email-Id</span>
+       <br/>
+       <input type = "password" name = "passwd" placeholder = "Password" ngModel #passwd =  'ngModel' required>
+       <span class="help-block" *ngIf="!passwd.valid && passwd.touched">Please Fill The Password</span>
+       <br/>
+       <input type = "submit" [disabled]="!userLogin.valid" value = "submit">
+    </form>

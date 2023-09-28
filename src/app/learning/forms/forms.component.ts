@@ -44,4 +44,7 @@ removeSkill(i:number) {
   onReset(form: NgForm): void {
     form.reset();
   }
+  onSubmit1(data:any){
+    alert('Email id is:-' + data.emailid + '\n' + 'Password is:-' + data.passwd);
+  }
 }

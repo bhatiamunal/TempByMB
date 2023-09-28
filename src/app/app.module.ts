@@ -20,7 +20,7 @@ import { SidebarComponent } from './containers/default/sidebar/sidebar.component
 import { NavbarComponent } from './containers/default/navbar/navbar.component';
 import { ObservableComponent } from './learning/observable/observable.component';
 import { FormsComponent } from './learning/forms/forms.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +42,7 @@ import { FormsComponent } from './learning/forms/forms.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
