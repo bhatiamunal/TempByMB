@@ -22,6 +22,8 @@ import { ObservableComponent } from './learning/observable/observable.component'
 import { FormsComponent } from './learning/forms/forms.component';
 import { FormsModule } from '@angular/forms';
 import { PipeComponent } from './learning/pipe/pipe.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HTTPRequestComponent } from './learning/http-request/http-request.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,11 +41,13 @@ import { PipeComponent } from './learning/pipe/pipe.component';
     NavbarComponent,
     ObservableComponent,
     FormsComponent,
-    PipeComponent
+    PipeComponent,
+    HTTPRequestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ReactiveFormsModule,FormsModule
   ],
   providers: [],
