@@ -21,6 +21,7 @@ import { NavbarComponent } from './containers/default/navbar/navbar.component';
 import { ObservableComponent } from './learning/observable/observable.component';
 import { FormsComponent } from './learning/forms/forms.component';
 import { FormsModule } from '@angular/forms';
+import { PipeComponent } from './learning/pipe/pipe.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     SidebarComponent,
     NavbarComponent,
     ObservableComponent,
-    FormsComponent
+    FormsComponent,
+    PipeComponent
   ],
   imports: [
     BrowserModule,
