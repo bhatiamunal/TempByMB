@@ -6,18 +6,24 @@ import { S1Component } from './s1.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CardComponent } from './card/card.component';
+import { ChartsComponent } from './charts/charts.component';
+import { DatatableComponent } from './datatable/datatable.component';
 
+import { DataTablesModule } from "angular-datatables";
 
 @NgModule({
   declarations: [
     S1Component,
     AboutUsComponent,
     ContactUsComponent,
-    CardComponent
+    CardComponent,
+    ChartsComponent,
+    DatatableComponent
   ],
   imports: [
     CommonModule,
-    S1RoutingModule
+    S1RoutingModule,
+    DataTablesModule
   ]
 })
 export class S1Module { }
