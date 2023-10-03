@@ -3,39 +3,33 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <button class="nav-btn open-btn" (click)="HideShow(1)">
-            <i class="fas fa-bars"></i>
+            <i class="fa fa-bars"></i>
           </button> 
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link 2</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link 3</a>
+          <a class="nav-link" href="#">Setting</a>
         </li>
       </ul>
     </div>
   </nav>
-  <div [ngClass]="nav1" >
+<div [ngClass]="nav1">
     <div [ngClass]="nav2" >
       <div [ngClass]="nav3">
         <button [ngClass]="nav4" (click)="HideShow(2)">
-          <i class="fas fa-times"></i>
+          <i class="fa fa-times"></i>
         </button>
-  
-       
         <ul class="list" >
-          <li *ngFor="let data of nav_data"><a (click)="navigationLink(data.path)"  routerLinkActive="active"> {{data.name}} </a></li>
-          <!-- <li><a href="#">Locations</a></li>
-          <li><a href="#">Life at </a></li>
-          <li>
-            <ul>
-              <li><a href="#"> culture memo</a></li>
-              <li><a href="#">Work life balance</a></li>
-              <li><a href="#">Inclusion & diversity</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </li>-->
+          <li *ngFor="let data of nav_data">
+            <a (click)="navigationLink(data.path)"  routerLinkActive="active"> 
+              <i [class]="data.icon"></i>
+              {{data.name}} 
+            </a>
+          </li>
+         
         </ul> 
       </div>
     </div>
-  </div>
+</div>

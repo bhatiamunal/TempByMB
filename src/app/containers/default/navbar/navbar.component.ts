@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ServiceService} from './../../service.service'
 import { Router } from '@angular/router';
+import { nav_data } from '../../_nav'
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -13,16 +14,7 @@ export class NavbarComponent {
   nav4 = ['nav-btn','close-btn']
    nav_data:any;
   constructor(getService:ServiceService,private router: Router){
-    this.nav_data =[
-      {
-          name:"About Us",
-          path:"/s1/AboutUs"
-      },
-      {
-        name:"Contact Us",
-        path:"/s1/ContactUs"
-      }
-    ]
+    this.nav_data =nav_data
   }
   HideShow(s1:any){
     if(s1==1){
