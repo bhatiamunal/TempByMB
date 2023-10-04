@@ -59,7 +59,7 @@
   .nav-white {
     background-color: #fff;
     width: 95%;
-    padding: 40px;
+    padding: 5%;
     position: relative;
     transition-delay: 0s;
   }
@@ -71,8 +71,8 @@
   .close-btn {
     opacity: 0.3;
     position: absolute;
-    top: 40px;
-    right: 30px;
+    top: 1%;
+    right: 5%;
   }
   
   .list {

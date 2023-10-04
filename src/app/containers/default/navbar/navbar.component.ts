@@ -11,7 +11,7 @@ export class NavbarComponent {
   nav1 =['nav','nav-black']
   nav2 =['nav','nav-red']
   nav3 =['nav','nav-white']
-  nav4 = ['nav-btn','close-btn']
+  nav4 = ['nav-btn']
    nav_data:any;
   constructor(getService:ServiceService,private router: Router){
     this.nav_data =nav_data

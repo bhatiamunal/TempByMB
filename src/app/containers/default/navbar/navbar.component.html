@@ -1,3 +1,40 @@
+<style>
+  .flex-container {
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+}
+
+.flex-container > div {
+  
+  width: 100%;
+  text-align: center;
+  font-size: large;
+}
+.nav-link-MB{
+  display: flex;
+    flex: 1;
+    align-items: center;
+    padding: var(--cui-sidebar-nav-link-padding-y) var(--cui-sidebar-nav-link-padding-x);
+    color: var(--cui-sidebar-nav-link-color);
+    text-decoration: none;
+    white-space: nowrap;
+    background: var(--cui-sidebar-nav-link-bg);
+    border: var(--cui-sidebar-nav-link-border);
+    border-radius: var(--cui-sidebar-nav-link-border-radius);
+    transition: background .15s ease,color .15s ease;
+}
+.nav-title-mb {
+    text-align: left;
+    padding: var(--cui-sidebar-nav-title-padding-y) var(--cui-sidebar-nav-title-padding-x);
+    margin-top: var(--cui-sidebar-nav-title-margin-top);
+    font-size: 80%;
+    font-weight: 700;
+    color: var(--cui-sidebar-nav-title-color);
+    text-transform: uppercase;
+    transition: height .15s,margin .15s;
+}
+</style>
 <nav class="navbar navbar-expand-sm bg-light">
     <div class="container-fluid">
       <ul class="navbar-nav">
@@ -18,18 +55,55 @@
 <div [ngClass]="nav1">
     <div [ngClass]="nav2" >
       <div [ngClass]="nav3">
-        <button [ngClass]="nav4" (click)="HideShow(2)">
-          <i class="fa fa-times"></i>
-        </button>
-        <ul class="list" >
-          <li *ngFor="let data of nav_data">
-            <a (click)="navigationLink(data.path)"  routerLinkActive="active"> 
-              <i [class]="data.icon"></i>
-              {{data.name}} 
-            </a>
-          </li>
-         
-        </ul> 
+       
+        
+        <div class="flex-container">
+          <div class="card">
+           
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="col-8">
+                  User Name
+                </div>
+                <div class="col-2">
+                  <button [ngClass]="nav4" (click)="HideShow(2)">
+                    <i class="fa fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              
+              
+            </div>
+           
+          </div>
+          <div *ngFor="let data of nav_data">
+            <div class="nav-title-mb pt-3 pb-3">{{data.heading}}</div>
+            <div *ngFor="let data_101 of data.data_1">
+              <div class="row pt-1 pb-1 pl-2" style="padding-left: 5%; ">
+                <div class="col-1">
+                  <i [class]="data_101.icon"></i>
+                </div>
+                <div class="col-11">
+                  <a class="nav-link-MB" (click)="navigationLink(data_101.path)"  routerLinkActive="active"> 
+                    {{data_101.name}} 
+                  </a>
+                  
+                </div>
+                <!-- <div class="col-1" ></div>
+                <div class="col-10" style="border-bottom: 1px solid black;">
+                <div class="col-1" ></div> -->
+                </div>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+            
+        </div>
       </div>
     </div>
 </div>
