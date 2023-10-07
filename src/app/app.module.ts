@@ -24,6 +24,11 @@ import { PipeComponent } from './learning/pipe/pipe.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HTTPRequestComponent } from './learning/http-request/http-request.component';
 import { ProductsCrudComponent } from './SAH_Dashboard/Inventory/products-crud/products-crud.component';
+import { VenderCrudComponent } from './SAH_Dashboard/payment/vender-crud/vender-crud.component';
+import { CustomerCrudComponent } from './SAH_Dashboard/payment/customer-crud/customer-crud.component';
+import { PurchaseInvoiceCrudComponent } from './SAH_Dashboard/Purchase/purchase-invoice-crud/purchase-invoice-crud.component';
+import { SalesInvoiceCrudComponent } from './SAH_Dashboard/Sales/sales-invoice-crud/sales-invoice-crud.component';
+import { EmployeeCrudComponent } from './SAH_Dashboard/User/employee-crud/employee-crud.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +48,12 @@ import { ProductsCrudComponent } from './SAH_Dashboard/Inventory/products-crud/p
     FormsComponent,
     PipeComponent,
     HTTPRequestComponent,
-    ProductsCrudComponent
+    ProductsCrudComponent,
+    VenderCrudComponent,
+    CustomerCrudComponent,
+    PurchaseInvoiceCrudComponent,
+    SalesInvoiceCrudComponent,
+    EmployeeCrudComponent
   ],
   imports: [
     BrowserModule,
