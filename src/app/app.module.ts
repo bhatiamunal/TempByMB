@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { AccordionV1Component } from './base/accordion-v1/accordion-v1.component';
 import { CardComponent } from './base/card/card.component';
 
-import { BaseComponent } from './table/base/base.component';
 import { TabComponent } from './base/tab/tab.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
@@ -24,12 +23,13 @@ import { FormsModule } from '@angular/forms';
 import { PipeComponent } from './learning/pipe/pipe.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HTTPRequestComponent } from './learning/http-request/http-request.component';
+import { ProductsCrudComponent } from './SAH_Dashboard/Inventory/products-crud/products-crud.component';
 @NgModule({
   declarations: [
     AppComponent,
     AccordionV1Component,
     CardComponent,
-    BaseComponent,
+
     TabComponent,
     LoginComponent,
     SignupComponent,
@@ -42,7 +42,8 @@ import { HTTPRequestComponent } from './learning/http-request/http-request.compo
     ObservableComponent,
     FormsComponent,
     PipeComponent,
-    HTTPRequestComponent
+    HTTPRequestComponent,
+    ProductsCrudComponent
   ],
   imports: [
     BrowserModule,
