@@ -29,6 +29,15 @@ import { CustomerCrudComponent } from './SAH_Dashboard/payment/customer-crud/cus
 import { PurchaseInvoiceCrudComponent } from './SAH_Dashboard/Purchase/purchase-invoice-crud/purchase-invoice-crud.component';
 import { SalesInvoiceCrudComponent } from './SAH_Dashboard/Sales/sales-invoice-crud/sales-invoice-crud.component';
 import { EmployeeCrudComponent } from './SAH_Dashboard/User/employee-crud/employee-crud.component';
+import { TablesComponent } from './containers/component/tables/tables.component';
+import { ButtonsComponent } from './containers/component/buttons/buttons.component';
+import { BadgesComponent } from './containers/component/badges/badges.component';
+import { ProgressBarsComponent } from './containers/component/progress-bars/progress-bars.component';
+import { SpinnersComponent } from './containers/component/spinners/spinners.component';
+import { PaginationComponent } from './containers/component/pagination/pagination.component';
+import { ListGroupsComponent } from './containers/component/list-groups/list-groups.component';
+import { CardsComponent } from './containers/component/cards/cards.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +62,16 @@ import { EmployeeCrudComponent } from './SAH_Dashboard/User/employee-crud/employ
     CustomerCrudComponent,
     PurchaseInvoiceCrudComponent,
     SalesInvoiceCrudComponent,
-    EmployeeCrudComponent
+    EmployeeCrudComponent,
+    TablesComponent,
+    ButtonsComponent,
+    BadgesComponent,
+    ProgressBarsComponent,
+    SpinnersComponent,
+    PaginationComponent,
+    ListGroupsComponent,
+    CardsComponent,
+ 
   ],
   imports: [
     BrowserModule,
