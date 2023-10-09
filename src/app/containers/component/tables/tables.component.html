@@ -1,18 +1,13 @@
         
     <table class="table table-striped">
       <thead>
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email</th>
+        <tr *ngFor="let user_1 of KeyArr;">
+          <th>{{user_1}} </th>
+         
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>john@example.com</td>
-        </tr>
+        <tr > <td *ngFor="let user of access;"> {{user}} </td> </tr>
         <tr>
           <td>Mary</td>
           <td>Moe</td>
