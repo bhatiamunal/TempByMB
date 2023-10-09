@@ -7,14 +7,15 @@ import { Component } from '@angular/core';
 })
 export class TablesComponent {
   obj = [ { c0: "a", c1: "b", c2: "c" }, { c0: "e", c1: "f", c2: "g" } ]; 
-   KeyArr:String[]
+   //KeyArr:String[]
    access:any
   constructor(){ 
-    this.KeyArr = Object.keys(this.obj[0]); 
+    //this.KeyArr = Object.keys(this.obj[0]); 
    
-    this.access = (str: keyof typeof this.KeyArr) => {
-      return this.obj[str];
-    };
+    // this.access = (str: keyof typeof this.obj) => {
+    //   //console.log(this.obj[str])
+    //   return this.obj[str];
+    // };
   }
   getHeaders() {
     let headers: string[] = [];
