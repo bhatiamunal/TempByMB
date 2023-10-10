@@ -1,23 +1,17 @@
         
     <table class="table table-striped">
       <thead>
-        <!-- <tr *ngFor="let user_1 of KeyArr;">
-          <th>{{user_1}} </th>
+        <tr >
+          <th *ngFor="let arr of tableKey;">{{arr}} </th>
          
-        </tr> -->
+        </tr>
       </thead>
       <tbody>
-        <tr > <td *ngFor="let user of access;"> {{user}} </td> </tr>
-        <tr>
-          <td>Mary</td>
-          <td>Moe</td>
-          <td>mary@example.com</td>
+        <tr *ngFor="let arr of tableValue;"> 
+          <td *ngFor="let val of arr ">{{val }}</td>
+          <!-- <td *ngFor="let user1 of getHeaders();"> {{user[user1]}} </td>  -->
         </tr>
-        <tr>
-          <td>July</td>
-          <td>Dooley</td>
-          <td>july@example.com</td>
-        </tr>
+        
       </tbody>
     </table>
  <table class="table table-striped">
