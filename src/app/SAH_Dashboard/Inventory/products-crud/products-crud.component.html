@@ -1,1 +1,52 @@
-<p>products-crud works!</p>
+<form [formGroup]="myForm" (ngSubmit)="Insert_CO()">
+    <div class="container">
+        <div class="card mt-3 mb-3">
+            <div class="card-header"> Product Name </div>
+            <div class="card-body">
+                <div class="row mb-3 mt-3">
+                    <div class="col-6"> <label class="form-label"> Name</label> <input type="text"
+                            formControlName="PName" class="form-control" placeholder="Enter Name" name="PName"> </div>
+                    <div class="col-6"> <label class="form-label">Brand Name </label> <input type="text"
+                            formControlName="BrandName" class="form-control" placeholder="Enter Brand Name"
+                            name="BrandName"> </div>
+                    <div class="col-6"> <label class="form-label">Catagories </label> <input type="text"
+                            formControlName="Catagories" class="form-control" placeholder="Enter Catagories"
+                            name="Catagories"> </div>
+                    <div class="col-6"> <label class="form-label">Describtion </label> <input type="text"
+                            formControlName="Describtion" class="form-control" placeholder="Enter Describtion"
+                            name="Describtion"> </div>
+                    <div class="col-6"> <label class="form-label">Uniq ID </label> <input type="text"
+                            formControlName="UniqID" class="form-control" placeholder="Enter Uniq ID" name="UniqID">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-3 mb-3">
+            <div class="card-header"> Product Price </div>
+            <div class="card-body">
+                <div class="row mb-3 mt-3">
+                    <div class="col-6"> <label class="form-label"> MRP</label> <input type="text" formControlName="MRP"
+                            class="form-control" placeholder="Enter MRP" name="MRP"> </div>
+                    <div class="col-6"> <label class="form-label"> Selling Price</label> <input type="text"
+                            formControlName="SP" class="form-control" placeholder="Enter Selling Price" name="SP">
+                    </div>
+                    <div class="col-6"> <label class="form-label"> Cost Price</label> <input type="text"
+                            formControlName="CP" class="form-control" placeholder="Enter Cost Price" name="CP"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-3 mb-3">
+            <div class="card-header"> Product Taxation</div>
+            <div class="card-body">
+                <div class="row mb-3 mt-3">
+                    <div class="col-6"> <label class="form-label"> HSN/SAC </label> <input type="text"
+                            formControlName="HSN" class="form-control" placeholder="Enter HSN/SAC" name="HSN"> </div>
+                    <div class="col-6"> <label class="form-label"> CGST % </label> <input type="text"
+                            formControlName="CGST" class="form-control" placeholder="Enter CGST%" name="CGST"> </div>
+                    <div class="col-6"> <label class="form-label"> SGST % </label> <input type="text"
+                            formControlName="SGST" class="form-control" placeholder="Enter SGST%" name="SGST"> </div>
+                </div>
+            </div>
+        </div> <button class="btn btn-outline-dark" type="submit">Save</button>
+    </div>
+</form>

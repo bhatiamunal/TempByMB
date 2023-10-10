@@ -34,4 +34,16 @@ export class NavbarComponent {
     this.router.navigate([data]);
     this.HideShow(2)
   }
+  ViewSubMenu(id:any){
+   
+    this.nav_data.map((ele:any)=>{
+      let data = ele;
+      if(ele.id==id){
+        data.visibilty=!data.visibilty
+      }
+      return data
+    })
+    console.log(this.nav_data)
+
+  }
 }

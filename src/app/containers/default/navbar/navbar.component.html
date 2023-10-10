@@ -80,24 +80,29 @@
            
           </div>
           <div *ngFor="let data of nav_data">
-            <div class="nav-title-mb pt-3 pb-3">{{data.heading}}</div>
-            <div *ngFor="let data_101 of data.data_1">
-              <div class="row pt-1 pb-1 pl-2" style="padding-left: 5%; ">
-                <div class="col-1">
-                  <i [class]="data_101.icon"></i>
-                </div>
-                <div class="col-11">
-                  <a class="nav-link-MB" (click)="navigationLink(data_101.path)"  routerLinkActive="active"> 
-                    {{data_101.name}} 
-                  </a>
-                  
-                </div>
-                <!-- <div class="col-1" ></div>
-                <div class="col-10" style="border-bottom: 1px solid black;">
-                <div class="col-1" ></div> -->
-                </div>
-                
+            <div class="nav-title-mb pt-3 pb-3" (click)="ViewSubMenu(data.id)">{{data.heading}} 
+              <span *ngIf="data.visibilty"> <i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+              <span *ngIf="!data.visibilty"> <i class="fa fa-arrow-up" aria-hidden="true"></i> </span> 
+            </div>
+            <div *ngIf="data.visibilty">
+              <div *ngFor="let data_101 of data.data_1" >
+                <div class="row pt-1 pb-1 pl-2" style="padding-left: 5%; ">
+                  <div class="col-1">
+                    <i [class]="data_101.icon"></i>
+                  </div>
+                  <div class="col-11">
+                    <a class="nav-link-MB" (click)="navigationLink(data_101.path)"  routerLinkActive="active"> 
+                      {{data_101.name}} 
+                    </a>
+                    
+                  </div>
+                  <!-- <div class="col-1" ></div>
+                  <div class="col-10" style="border-bottom: 1px solid black;">
+                  <div class="col-1" ></div> -->
+                </div>  
               </div>
+            </div>
+            
               
             </div>
             
