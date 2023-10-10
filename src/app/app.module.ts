@@ -37,6 +37,7 @@ import { SpinnersComponent } from './containers/component/spinners/spinners.comp
 import { PaginationComponent } from './containers/component/pagination/pagination.component';
 import { ListGroupsComponent } from './containers/component/list-groups/list-groups.component';
 import { CardsComponent } from './containers/component/cards/cards.component';
+import { AdminComponent } from './SAH_Dashboard/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,7 @@ import { CardsComponent } from './containers/component/cards/cards.component';
     PaginationComponent,
     ListGroupsComponent,
     CardsComponent,
+    AdminComponent,
  
   ],
   imports: [

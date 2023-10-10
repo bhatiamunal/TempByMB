@@ -1,0 +1,92 @@
+<form [formGroup]="myForm" (ngSubmit)="Insert_CO()">
+    <div class="container">
+        <div class="card mt-3 mb-3">
+            <div class="card-header"> Company Details </div>
+            <div class="card-body">
+                <div class="row mb-3 mt-3">
+                    <div class="col-6"> <label class="form-label"> Copany Name </label> <input type="text"
+                            formControlName="CoName" class="form-control" placeholder="Enter Copany Name" name="CoName">
+                    </div>
+                    <div class="col-6"> <label class="form-label"> Copany Email </label> <input type="text"
+                            formControlName="CoEmail" class="form-control" placeholder="Enter Email" name="CoEmail">
+                    </div>
+                    <div class="col-6"> <label class="form-label"> Copany GST NO </label> <input type="text"
+                            formControlName="CoGSTNO" class="form-control" placeholder="Enter GST NO" name="CoGSTNO">
+                    </div>
+                    <div class="col-6"> <label class="form-label"> Copany GST Code </label> <input type="text"
+                            formControlName="CoGSTCode" class="form-control" placeholder="Enter Copany GST Code "
+                            name="CoGSTCode "> </div>
+                    <div class="col-6"> <label class="form-label"> Copany Mobile </label> <input type="text"
+                            formControlName="CoMobile" class="form-control" placeholder="Enter Copany Mobile "
+                            name="CoMobile"> </div>
+                    <div class="col-6"> <label class="form-label"> Copany Website </label> <input type="text"
+                            formControlName="CoWebsite" class="form-control" placeholder="Enter Copany Website"
+                            name="CoWebsite"> </div>
+                    <div class="col-6"> <label class="form-label"> Copany Pan </label> <input type="text"
+                            formControlName="CoPan" class="form-control" placeholder="Enter Copany Pan" name="CoPan">
+                    </div>
+                    <div class="col-6"> <label class="form-label"> Copany TIN </label> <input type="text"
+                            formControlName="CoTIN" class="form-control" placeholder="Enter Copany TIN " name="CoTIN">
+                    </div>
+                    <div class="col-6"> <label class="form-label"> Copany VAT </label> <input type="text"
+                            formControlName="CoVAT" class="form-control" placeholder="Enter Copany VAT" name="CoVAT">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-3 mb-3">
+            <div class="card-header"> Company Address Details </div>
+            <div class="card-body">
+                <div class="row mb-3 mt-3">
+                    <div class="col-6"> <label class="form-label"> Copany Address Pin Code </label> <input type="text"
+                            formControlName="CoAddressPinCode" class="form-control"
+                            placeholder="Enter Copany Address Pin Code" name="CoAddressPinCode"> </div>
+                    <div class="col-6"> <label class="form-label"> Copany Address State </label> <input type="text"
+                            formControlName="CoAddressState" class="form-control" placeholder="Enter Copany State"
+                            name="CoAddressState"> </div>
+                    <div class="col-6"> <label class="form-label"> Copany Address City </label> <input type="text"
+                            formControlName="CoAddressCity" class="form-control" placeholder="Enter Copany City"
+                            name="CoAddressCity"> </div>
+                    <div class="col-6"> <label class="form-label"> Copany Address 1 </label> <input type="text"
+                            formControlName="CoAddress1" class="form-control" placeholder="Enter Copany Address 1"
+                            name="CoAddress1"> </div>
+                    <div class="col-6"> <label class="form-label"> Copany Address 2 </label> <input type="text"
+                            formControlName="CoAddress2" class="form-control" placeholder="Enter Copany Address 2"
+                            name="CoAddress2"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-3 mb-3">
+            <div class="card-header"> Company Bank Details </div>
+            <div class="card-body">
+                <div class="row mb-3 mt-3">
+                    <div class="col-6"> <label class="form-label"> Bank Name </label> <input type="text"
+                            formControlName="CoBankName" class="form-control" placeholder="Enter Copany Bank Name"
+                            name="CoBankName"> </div>
+                    <div class="col-6"> <label class="form-label"> Bank Address </label> <input type="text"
+                            formControlName="CoBankAddress" class="form-control" placeholder="Enter Copany Bank Address"
+                            name="CoBankAddress"> </div>
+                    <div class="col-6"> <label class="form-label"> Bank IFSC </label> <input type="text"
+                            formControlName="CoBankIFSC" class="form-control" placeholder="Enter Copany Bank IFSC"
+                            name="CoBankIFSC"> </div>
+                    <div class="col-6"> <label class="form-label"> Bank Account Number </label> <input type="text"
+                            formControlName="CoBankAccountNumber" class="form-control"
+                            placeholder="Enter Copany Bank Account Number" name="CoBankAccountNumber"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-3 mb-3">
+            <div class="card-header"> Employee Details </div>
+            <div class="card-body">
+                <div class="row mb-3 mt-3">
+                    <div class="col-6"> <label class="form-label"> Person Name </label> <input type="text"
+                            formControlName="CoPersonName" class="form-control" placeholder="Enter Copany Person Name"
+                            name="CoPersonName"> </div>
+                    <div class="col-6"> <label class="form-label"> Person Number </label> <input type="text"
+                            formControlName="CoPersonNumber" class="form-control"
+                            placeholder="Enter Copany Person Number" name="CoPersonNumber"> </div>
+                </div>
+            </div>
+        </div> <button class="btn btn-outline-dark" type="submit">Save </button>
+    </div>
+</form>
