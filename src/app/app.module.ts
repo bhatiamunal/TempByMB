@@ -24,8 +24,8 @@ import { PipeComponent } from './learning/pipe/pipe.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HTTPRequestComponent } from './learning/http-request/http-request.component';
 import { ProductsCrudComponent } from './SAH_Dashboard/Inventory/products-crud/products-crud.component';
-import { VenderCrudComponent } from './SAH_Dashboard/payment/vender-crud/vender-crud.component';
-import { CustomerCrudComponent } from './SAH_Dashboard/payment/customer-crud/customer-crud.component';
+import { VenderPaymentCrudComponent } from './SAH_Dashboard/payment/vender-crud/vender-crud.component';
+import { CustomerPaymentCrudComponent } from './SAH_Dashboard/payment/customer-crud/customer-crud.component';
 import { PurchaseInvoiceCrudComponent } from './SAH_Dashboard/Purchase/purchase-invoice-crud/purchase-invoice-crud.component';
 import { SalesInvoiceCrudComponent } from './SAH_Dashboard/Sales/sales-invoice-crud/sales-invoice-crud.component';
 import { EmployeeCrudComponent } from './SAH_Dashboard/User/employee-crud/employee-crud.component';
@@ -38,6 +38,8 @@ import { PaginationComponent } from './containers/component/pagination/paginatio
 import { ListGroupsComponent } from './containers/component/list-groups/list-groups.component';
 import { CardsComponent } from './containers/component/cards/cards.component';
 import { AdminComponent } from './SAH_Dashboard/admin/admin.component';
+import { CategoryComponent } from './SAH_Dashboard/Inventory/category/category.component';
+import { BrandComponent } from './SAH_Dashboard/Inventory/brand/brand.component';
 
 @NgModule({
   declarations: [
@@ -59,8 +61,8 @@ import { AdminComponent } from './SAH_Dashboard/admin/admin.component';
     PipeComponent,
     HTTPRequestComponent,
     ProductsCrudComponent,
-    VenderCrudComponent,
-    CustomerCrudComponent,
+    VenderPaymentCrudComponent,
+    CustomerPaymentCrudComponent,
     PurchaseInvoiceCrudComponent,
     SalesInvoiceCrudComponent,
     EmployeeCrudComponent,
@@ -73,6 +75,8 @@ import { AdminComponent } from './SAH_Dashboard/admin/admin.component';
     ListGroupsComponent,
     CardsComponent,
     AdminComponent,
+    CategoryComponent,
+    BrandComponent,
  
   ],
   imports: [
