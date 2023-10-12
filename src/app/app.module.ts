@@ -40,6 +40,8 @@ import { CardsComponent } from './containers/component/cards/cards.component';
 import { AdminComponent } from './SAH_Dashboard/admin/admin.component';
 import { CategoryComponent } from './SAH_Dashboard/Inventory/category/category.component';
 import { BrandComponent } from './SAH_Dashboard/Inventory/brand/brand.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { EstInvoiceComponent } from './SAH_Dashboard/Purchase/est-invoice/est-invoice.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +79,8 @@ import { BrandComponent } from './SAH_Dashboard/Inventory/brand/brand.component'
     AdminComponent,
     CategoryComponent,
     BrandComponent,
+    ErrorPageComponent,
+    EstInvoiceComponent,
  
   ],
   imports: [

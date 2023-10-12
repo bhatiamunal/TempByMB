@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 import { BrandComponent } from './SAH_Dashboard/Inventory/brand/brand.component'
 import { CategoryComponent } from './SAH_Dashboard/Inventory/category/category.component'
 import { ProductsCrudComponent } from './SAH_Dashboard/Inventory/products-crud/products-crud.component'
 
 import  { PurchaseInvoiceCrudComponent } from './SAH_Dashboard/Purchase/purchase-invoice-crud/purchase-invoice-crud.component'
-
 import { SalesInvoiceCrudComponent } from './SAH_Dashboard/Sales/sales-invoice-crud/sales-invoice-crud.component'
+import { EstInvoiceComponent } from './SAH_Dashboard/Purchase/est-invoice/est-invoice.component';
+import {EstInvoiceComponentSales } from './SAH_Dashboard/Sales/est-invoice/est-invoice.component'
 
 import {CustomerCrudComponent} from './SAH_Dashboard/User/customer-crud/customer-crud.component'
 import {EmployeeCrudComponent} from './SAH_Dashboard/User/employee-crud/employee-crud.component'
@@ -20,6 +20,9 @@ import { CustomerPaymentCrudComponent } from './SAH_Dashboard/payment/customer-c
 import { VenderPaymentCrudComponent } from './SAH_Dashboard/payment/vender-crud/vender-crud.component';
 
 import { AuthGaurdService } from './auth-gaurd.service';
+ 
+import { ErrorPageComponent } from  './error-page/error-page.component'
+
 const routes: Routes = [
   { 
     path: 's1', 
@@ -32,6 +35,8 @@ const routes: Routes = [
 
   { path: 'PurchaseInvoice', component: PurchaseInvoiceCrudComponent , canActivate: [AuthGaurdService] },
   { path: 'SalesInvoice', component: SalesInvoiceCrudComponent , canActivate: [AuthGaurdService] },
+  { path: 'EstPurchaseBill', component: EstInvoiceComponent , canActivate: [AuthGaurdService] },
+  { path: 'EstSalesBill', component: EstInvoiceComponentSales , canActivate: [AuthGaurdService]},
 
   { path: 'Customer-User', component: CustomerCrudComponent , canActivate: [AuthGaurdService] },
   { path: 'Employee-User', component: EmployeeCrudComponent , canActivate: [AuthGaurdService] },
@@ -41,7 +46,8 @@ const routes: Routes = [
 
   { path: 'CustomerPaymentCrud', component: CustomerPaymentCrudComponent , canActivate: [AuthGaurdService] },
   { path: 'VenderPaymentCrudComponent', component: VenderPaymentCrudComponent , canActivate: [AuthGaurdService] },
-  { path: '**', redirectTo: '' }
+  { path: 'ErrorPageComponent', component: ErrorPageComponent  },
+  { path: '**', redirectTo: 'ErrorPageComponent' }
 ];
 
 @NgModule({

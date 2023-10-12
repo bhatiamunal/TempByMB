@@ -6,16 +6,16 @@ export const nav_data = [
          data_1: [
             { 
                 name: "Products", 
-                path: "/s1/AboutUs", 
+                path: "/Product", 
                 icon: "fa fa-cart-arrow-down" 
             }, 
             { 
                 name: "catagories", 
-                path: "/s1/AboutUs",
+                path: "/Category",
                  icon: "fa fa-cart-arrow-down" }, 
             { 
                 name: "Brand", 
-                path: "/s1/AboutUs", 
+                path: "/Brand", 
                 icon: "fa fa-btc" },
         ] }, 
         { 
@@ -25,7 +25,7 @@ export const nav_data = [
             data_1: [
                 { 
                     name: "Invoice", 
-                    path: "/s1/AboutUs", 
+                    path: "/PurchaseInvoice", 
                     icon: "fa fa-file-pdf-o" },
                  { 
                     name: "Est Invoice", 
@@ -33,7 +33,7 @@ export const nav_data = [
                     icon: "fa fa-file-image-o" }, 
                  { 
                     name: "Vendor", 
-                    path: "/s1/AboutUs", 
+                    path: "/VenderCrudComponent", 
                     icon: "fa fa-user-o" },
                 ] 
         }, 
@@ -42,7 +42,7 @@ export const nav_data = [
             data_1: [
                 { 
                     name: "Invoice", 
-                    path: "/s1/AboutUs", 
+                    path: "/SalesInvoice", 
                     icon: "fa fa-file-pdf-o" }, 
                 { 
                     name: "Est Invoice",
@@ -50,7 +50,7 @@ export const nav_data = [
                      icon: "fa fa-file-image-o" },
                  { 
                     name: "Customer",
-                     path: "/s1/AboutUs", 
+                     path: "/Customer-User", 
                      icon: "fa fa-user-circle-o" },
                 ] 
         }, 
@@ -62,19 +62,19 @@ export const nav_data = [
               [
                 { 
                     name: "Vendor", 
-                    path: "/s1/AboutUs", 
+                    path: "/VenderCrudComponent", 
                     icon: "fa fa-user-o" }, 
               { 
                 name: "Customer", 
-                path: "/s1/AboutUs", 
+                path: "/Customer-User", 
                 icon: "fa fa-user-circle" }, 
               { 
                 name: "Payment for Vendor ",
-                 path: "/s1/AboutUs", 
+                 path: "/VenderPaymentCrudComponent", 
                  icon: "fa fa-cc" },
                { 
                 name: "Payment for Customer ", 
-                path: "/s1/AboutUs", 
+                path: "/CustomerPaymentCrud", 
                 icon: "fa fa-money" },
             ] 
         }, 
@@ -83,18 +83,18 @@ export const nav_data = [
             data_1: [
                 { 
                     name: "Employee",
-                     path: "/s1/AboutUs",
+                     path: "/Employee-User",
                       icon: "fa fa-address-book-o" }, 
                       { 
                         name: "Assets",
-                        path: "/s1/AboutUs",
+                        path: "/Admin",
                          icon: "fa fa-university" 
                         
                         }, 
                          
                          { 
                             name: "Company Details", 
-                            path: "/s1/AboutUs", 
+                            path: "/Admin", 
                             icon: "fa fa-users" 
                         },
         ] 
