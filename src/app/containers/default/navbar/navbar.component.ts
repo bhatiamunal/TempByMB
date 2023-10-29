@@ -31,6 +31,7 @@ export class NavbarComponent {
     }
   }
   navigationLink(data:any){
+    debugger
     this.router.navigate([data]);
     this.HideShow(2)
   }
