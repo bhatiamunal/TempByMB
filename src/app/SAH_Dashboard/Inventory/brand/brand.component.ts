@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./brand.component.css']
 })
 export class BrandComponent {
+  obj = [ { 0: "a", 1: "b", 2: "c" }, { 0: "e", 1: "f", 2: "g" } ]; 
+  constructor(){
+
+  }
 
 }

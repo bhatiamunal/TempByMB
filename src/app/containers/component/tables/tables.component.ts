@@ -1,23 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, Input,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tables',
   templateUrl: './tables.component.html',
   styleUrls: ['./tables.component.css']
 })
-export class TablesComponent {
-  obj = [ { 0: "a", 1: "b", 2: "c" }, { 0: "e", 1: "f", 2: "g" } ]; 
- 
+export class TablesComponent implements OnInit{
+  
+ @Input() msgToChild:any
    tableKey:any=[]
    tableValue:any=[]
+   ngOnInit() {
+    this.msgToChild.forEach((ele:any)=>{
+    
+      this.tableKey = Object.keys(ele)
+      this.tableValue.push(Object.values(ele));
+      
+     })
+  }
+ 
   constructor(){ 
   
-   this.obj.forEach((ele:any)=>{
-    console.log(ele)
-    this.tableKey = Object.keys(ele)
-    this.tableValue.push(Object.values(ele));
-    
-   })
+   
   }
 
   
